@@ -1,4 +1,4 @@
-package com.medianet.video.rtb.enums;
+package com.splitwise.enums;
 
 public enum ExpenseType {
     PERCENTAGE,

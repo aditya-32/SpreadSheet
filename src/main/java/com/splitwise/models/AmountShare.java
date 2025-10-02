@@ -1,4 +1,4 @@
-package com.medianet.video.rtb.models;
+package com.splitwise.models;
 
 import lombok.Builder;
 import lombok.Value;

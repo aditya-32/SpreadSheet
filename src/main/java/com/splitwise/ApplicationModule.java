@@ -1,8 +1,8 @@
-package com.medianet.video.rtb;
+package com.splitwise;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Scopes;
-import com.medianet.video.rtb.dao.DaoModule;
+import com.splitwise.dao.DaoModule;
 
 public class ApplicationModule extends AbstractModule {
 

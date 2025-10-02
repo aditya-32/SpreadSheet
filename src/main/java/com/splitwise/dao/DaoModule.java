@@ -1,4 +1,4 @@
-package com.medianet.video.rtb.dao;
+package com.splitwise.dao;
 
 import com.google.inject.PrivateModule;
 import com.google.inject.Scopes;

@@ -1,8 +1,8 @@
-package com.medianet.video.rtb.dao;
+package com.splitwise.dao;
 
 import com.google.inject.Inject;
-import com.medianet.video.rtb.exceptions.DaoExceptions;
-import com.medianet.video.rtb.models.User;
+import com.splitwise.exceptions.DaoExceptions;
+import com.splitwise.models.User;
 import java.util.HashMap;
 import java.util.Map;
 import lombok.RequiredArgsConstructor;

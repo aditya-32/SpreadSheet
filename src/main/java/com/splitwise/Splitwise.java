@@ -1,15 +1,15 @@
-package com.medianet.video.rtb;
+package com.splitwise;
 
 import com.google.inject.Inject;
-import com.medianet.video.rtb.dao.GroupDao;
-import com.medianet.video.rtb.dao.UserDao;
-import com.medianet.video.rtb.enums.ExpenseType;
-import com.medianet.video.rtb.exceptions.DaoExceptions;
-import com.medianet.video.rtb.exceptions.ManagerException;
-import com.medianet.video.rtb.models.AmountShare;
-import com.medianet.video.rtb.models.Group;
-import com.medianet.video.rtb.models.Transaction;
-import com.medianet.video.rtb.models.User;
+import com.splitwise.dao.GroupDao;
+import com.splitwise.dao.UserDao;
+import com.splitwise.enums.ExpenseType;
+import com.splitwise.exceptions.DaoExceptions;
+import com.splitwise.exceptions.ManagerException;
+import com.splitwise.models.AmountShare;
+import com.splitwise.models.Group;
+import com.splitwise.models.Transaction;
+import com.splitwise.models.User;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;

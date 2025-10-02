@@ -1,9 +1,9 @@
-package com.medianet.video.rtb;
+package com.splitwise;
 
 import com.google.inject.Guice;
 import com.google.inject.Stage;
-import com.medianet.video.rtb.enums.ExpenseType;
-import com.medianet.video.rtb.models.AmountShare;
+import com.splitwise.enums.ExpenseType;
+import com.splitwise.models.AmountShare;
 import java.util.ArrayList;
 import java.util.List;
 
