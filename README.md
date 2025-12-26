@@ -4,7 +4,23 @@ A production-ready Google Sheets-like application built with Spring Boot, featur
 
 ---
 
-## 🚀 Quick Start
+## ⚡ Super Quick Start (Using Make)
+
+```bash
+# Build and start everything
+make build
+make start
+
+# That's it! Application running at http://localhost:8080
+# (PostgreSQL starts automatically)
+
+# To stop everything
+make stop
+```
+
+---
+
+## 🚀 Quick Start (Manual)
 
 ### Option 1: Run with H2 (In-Memory Database)
 
@@ -516,23 +532,45 @@ spreadsheet:
 
 ## 📞 Quick Reference
 
+### Using Make (Recommended)
 ```bash
-# Development (H2)
-mvn spring-boot:run
+make build          # Build project
+make start          # Start everything
+make stop           # Stop everything
+```
 
-# Production (PostgreSQL)
+### Manual Commands
+```bash
+# Build
+mvn clean install
+
+# Start PostgreSQL
 cd docker && docker-compose up -d
+
+# Start application
 mvn spring-boot:run -Dspring-boot.run.profiles=docker
 
-# Testing
+# Run tests
 mvn test
-
-# API Base URL
-http://localhost:8080/api
-
-# Database UI (PostgreSQL)
-http://localhost:8081
 ```
+
+### Access Points
+```
+API:        http://localhost:8080/api
+Test:       curl http://localhost:8080/api/workbooks
+```
+
+---
+
+## 🛠️ Makefile Commands
+
+| Command | Description |
+|---------|-------------|
+| `make build` | Build the project |
+| `make postgres` | Start PostgreSQL database |
+| `make start` | Start application (starts PostgreSQL automatically) |
+| `make stop` | Stop everything (app + PostgreSQL) |
+| `make clean` | Clean build artifacts |
 
 ---
 
